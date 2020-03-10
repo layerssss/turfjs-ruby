@@ -5,7 +5,7 @@ on:
     types: [started]
 jobs:
   build:
-    name: Build + Publish
+    name: bump version
     runs-on: ubuntu-latest
     # Manually trigger Action by "start" button, until GitHub supports it in a proper way
     # https://dev.to/s_abderemane/manual-trigger-with-github-actions-279e
