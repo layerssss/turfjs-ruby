@@ -3,9 +3,6 @@ name: Bump version
 on:
   watch:
     types: [started]
-env:
-  NAME: Michael Yin
-  EMAIL: layerssss@gmail.com
 jobs:
   build:
     name: Build + Publish
@@ -26,6 +23,8 @@ jobs:
           bundle install
       - name: bump
         run: |
+          git config user.name "Michael Yin"
+          git config user.email "layerssss@gmail.com"
           bin/bump patch --tag
           git push
           git push --tags
