@@ -24,6 +24,6 @@ jobs:
           bundle install
       - name: bump
         run: |
-          bin/bump --tag
+          bin/bump patch --tag
           git push
           git push --tags
