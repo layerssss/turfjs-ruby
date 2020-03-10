@@ -14,6 +14,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
+    bump (0.9.0)
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
     execjs (2.7.0)
@@ -34,6 +35,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bump
   minitest
   pry
   rake
