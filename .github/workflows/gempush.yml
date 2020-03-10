@@ -18,6 +18,10 @@ jobs:
       with:
         version: 2.6.x
 
+    - name: install dependencies
+      run: |
+        bundle install
+
     - name: rake test
       run: |
         rake test
