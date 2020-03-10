@@ -1,8 +1,9 @@
 name: Ruby Gem
 
 on:
-  tags:
-    - v*
+  push:
+    tags:
+      - v*
 
 jobs:
   build:
