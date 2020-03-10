@@ -1,0 +1,29 @@
+name: Ruby Gem
+
+on:
+  watch:
+    types: [started]
+
+jobs:
+  build:
+    name: Build + Publish
+    runs-on: ubuntu-latest
+    # Manually trigger Action by "start" button, until GitHub supports it in a proper way
+    # https://dev.to/s_abderemane/manual-trigger-with-github-actions-279e
+    if: github.actor == github.event.repository.owner.login
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6.x
+
+      - name: install dependencies
+        run: |
+          gem install bundler:2.0.2
+          bundle install
+      - name: bump
+        run: |
+          bin/bump --tag
+          git push
+          git push --tags
