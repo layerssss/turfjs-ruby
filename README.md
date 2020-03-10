@@ -1,2 +1,2 @@
-## TurfJS Ruby ![Ruby Gem](https://github.com/layerssss/turfjs-ruby/workflows/Ruby%20Gem/badge.svg?branch=master&event=push)
+## TurfJS Ruby ![Build](https://github.com/layerssss/turfjs-ruby/workflows/Build/badge.svg?branch=master&event=push)
 
