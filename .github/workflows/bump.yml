@@ -3,7 +3,9 @@ name: Bump version
 on:
   watch:
     types: [started]
-
+env:
+  NAME: Michael Yin
+  EMAIL: layerssss@gmail.com
 jobs:
   build:
     name: Build + Publish
