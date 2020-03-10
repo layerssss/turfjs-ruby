@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    turfjs (0.0.5)
+    turfjs (0.0.6)
       activesupport
       execjs (~> 2.2, >= 2.2.1)
 
