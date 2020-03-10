@@ -13,18 +13,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
+    - uses: actions/setup-ruby@v1
       with:
-        version: 2.6.x
+        version: 2.6.x- 
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
 
     - name: install dependencies
       run: |
+        gem install bundler:2.0.2
         bundle install
+        yarn install
+    - name: build turfjs
+      run: yarn build
 
     - name: rake test
-      run: |
-        rake test
+      run: rake test
         
     - name: Publish to RubyGems
       run: |
