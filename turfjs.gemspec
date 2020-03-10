@@ -11,6 +11,6 @@ Gem::Specification.new do |s|
   s.files = Dir['lib/*.rb', 'lib/turfjs-build.js']
   s.homepage = 'https://github.com/layerssss/turfjs-ruby'
   s.license = 'MIT'
-  s.add_runtime_dependency 'execjs', '~> 2.2', '>= 2.2.1'
   s.add_runtime_dependency 'activesupport'
+  s.add_runtime_dependency 'execjs', '~> 2.2', '>= 2.2.1'
 end
