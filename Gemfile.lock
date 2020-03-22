@@ -1,14 +1,14 @@
 PATH
   remote: .
   specs:
-    turfjs (0.0.8)
+    turfjs (0.0.9)
       activesupport
       execjs (~> 2.2, >= 2.2.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.2.1)
+    activesupport (6.0.2.2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
