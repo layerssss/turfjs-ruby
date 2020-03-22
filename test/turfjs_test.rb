@@ -17,6 +17,16 @@ class TurfJSTest < Minitest::Test
     )
   end
 
+  def test_feature_collection_return_geojson
+    assert_equal(
+      {
+        'type' => 'FeatureCollection',
+        'features' => []
+      },
+      TurfJS.feature_collection([])
+    )
+  end
+
   def test_foo_raise_error
     assert_raises(
       NoMethodError
