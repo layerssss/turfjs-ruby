@@ -25,7 +25,7 @@ module TurfJS
     return super unless turf_api_name
 
     begin
-      context.call("turf.#{method}", *args)
+      context.call("turf.#{turf_api_name}", *args)
     rescue ExecJS::ProgramError => e
       raise Error, e.message
     end
